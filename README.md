@@ -1,1 +1,10 @@
-# ComputerVision
+                                                        Image Retrieval System
+
+Abstracts:
+
+Computer vision has revolutionized the way we interpret images through deep learning techniques. This paper explores the performance of various Convolution models, including fine-tuned VGG16, VGG19 and ResNet50, a base mathematical model, a deep CNN model, and a retrained ResNet50 model. Cosine similarity is utilized to identify similar image vectors. The primary objective is to compare the architectures of these models and evaluate their benchmarking performance.  Additionally, an image retrieval system is developed, allowing users to upload an image and receive visually similar images from a database.
+
+
+Introduction:
+
+Before delving into the technical aspects of an Image Retrieval System, let’s start with a high-level overview. Imagine you admire a colleague's outfit but feel hesitant to ask about its name. Fortunately, you have a group photo where they are wearing it. You decide to search for the outfit on your favorite online shopping platform, but you have no details about the dress. You wish the platform had a feature that allows you to upload an image and return similar items from their inventory. This is exactly what an Image Retrieval System does—it takes an image as input and finds visually similar images from its database. But how does it work? Let's now explore the inner workings of the Image Retrieval System in more detail. Section I covers the fundamental concepts of computer vision and the architecture of convolutional neural networks (CNNs).  Section II discusses the base model and the custom convolutional model. Section 3 focuses on the fine-tuned models, their architectures, and benchmarking their performance. Section 4 utilizes the most robust models, retraining them with specific images for improved accuracy. Section 5 explains the frontend design and the APIs used for interaction. The final section presents the conclusion, highlights the limitations, and outlines areas for improvement to enhance feature extraction.
