@@ -1,4 +1,4 @@
-                                                        Image Retrieval System
+                                           Image Retrieval System
 
 Abstracts:
 
