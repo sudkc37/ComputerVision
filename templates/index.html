@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Retrieval System</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+        }
+     
+        .background-image {
+            width: 100%;
+            height: 300px; 
+            background-image: url('https://cdn-bbaid.nitrocdn.com/wYFmIWkSNKpdInpiRfVoEqTErZtkFjBo/assets/images/optimized/rev-ff73c2b/www.rishabhsoft.com/wp-content/uploads/2023/04/Blog-Banner-Computer-Vision.jpg'); 
+            background-size: cover;
+            background-position: center;
+        }
+        h1 {
+            font-size: 32px;
+            margin: 20px 0;
+        }
+        form {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        input[type="file"] {
+            font-size: 20px;
+            padding: 12px;
+            margin-right: 10px;
+        }
+        button {
+            font-size: 20px;
+            padding: 12px;
+            background-color: green;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: darkgreen;
+        }
+    </style>
+</head>
+<body>
+
+  
+    <div class="background-image"></div>
+
+    <h1>Image Retrieval System</h1>
+    <form action="/" method="POST" enctype="multipart/form-data">
+        <input type="file" name="query_image" accept="image/*" required>
+        <button type="submit">Retrieve</button>
+    </form>
+
+    {% if query_image %}
+    <h2>Query Image</h2>
+    <img src="{{ url_for('serve_static', filename=query_image.split('/')[-1]) }}" alt="Query Image" style="width:300px;">
+
+    <h2>Retrieved Images</h2>
+    <div>
+        {% for image in similar_images %}
+        <img src="{{ url_for('serve_static', filename=image.split('/')[-1]) }}" alt="Retrieved Image" style="width:200px;">
+        {% endfor %}
+    </div>
+    {% endif %}
+</body>
+</html>
