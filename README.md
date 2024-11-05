@@ -9,7 +9,6 @@ Introduction:
 
 Before delving into the technical aspects of an Image Retrieval System, let’s start with a high-level overview. Imagine you admire a colleague's outfit but feel hesitant to ask about its name. Fortunately, you have a group photo where they are wearing it. You decide to search for the outfit on your favorite online shopping platform, but you have no details about the dress. You wish the platform had a feature that allows you to upload an image and return similar items from their inventory. This is exactly what an Image Retrieval System does—it takes an image as input and finds visually similar images from its database.
 <img width="468" alt="image" src="https://github.com/user-attachments/assets/cbff6fa8-a34f-4bd6-909a-e6f1acbb07c3">
-<img width="987" alt="Screenshot 2024-11-05 at 11 16 11 AM" src="https://github.com/user-attachments/assets/141b26e7-3c37-4f19-a351-955dff549c73">
 
 
 But how does it work? Let's now explore the inner workings of the Image Retrieval System in more detail. Section I covers the fundamental concepts of computer vision and the architecture of convolutional neural networks (CNNs).  Section II discusses the base model and the custom convolutional model. Section 3 focuses on the fine-tuned models, their architectures, and benchmarking their performance. Section 4 utilizes the most robust models, retraining them with specific images for improved accuracy. Section 5 explains the frontend design and the APIs used for interaction. The final section presents the conclusion, highlights the limitations, and outlines areas for improvement to enhance feature extraction.
@@ -22,4 +21,8 @@ Computer vision enables machines to analyze and interpret visual data from image
 Similarly, CNNs also utilize deep architectures, but they extract features from images using convolution operations. A simple CNN architecture typically consists of feature extraction layers, which include convolution and pooling layers. The extracted feature vectors are then fed into fully connected layers of the deep neural network for classification or other tasks. 
 ![1*tvwYybdIwvoOs0DuUEJJTg](https://github.com/user-attachments/assets/3e6b0af7-8475-4683-820f-650563f4470c)
 
+
+
 refer to the paper:
+
+<img width="987" alt="Screenshot 2024-11-05 at 11 16 11 AM" src="https://github.com/user-attachments/assets/141b26e7-3c37-4f19-a351-955dff549c73">
