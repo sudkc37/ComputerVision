@@ -23,6 +23,6 @@ Similarly, CNNs also utilize deep architectures, but they extract features from 
 
 
 
-refer to the paper:
+refer to the paper: Here is Simple example;
 
 <img width="987" alt="Screenshot 2024-11-05 at 11 16 11 AM" src="https://github.com/user-attachments/assets/141b26e7-3c37-4f19-a351-955dff549c73">
